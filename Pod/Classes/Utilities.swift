@@ -49,6 +49,7 @@ class Utilities {
     static func isHostReachable() -> Bool {
         // TODO: Implement Reachability dependency
         // return (Reachability(hostName: "google.com").currentReachabilityStatus() != NetworkStatus.NotReachable)
+        return true
     }
     
     static func viewController(name: String, inStoryboard: UIStoryboard) -> UIViewController {

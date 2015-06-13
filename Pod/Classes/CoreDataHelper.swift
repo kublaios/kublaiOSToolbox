@@ -15,7 +15,7 @@ class CoreDataHelper {
     
     static func newMoc() -> NSManagedObjectContext {
         var moc = NSManagedObjectContext()
-        moc.persistentStoreCoordinator = Instances.appDelegate().managedObjectContext!.persistentStoreCoordinator
+        moc.persistentStoreCoordinator = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!.persistentStoreCoordinator
         return moc
     }
     
