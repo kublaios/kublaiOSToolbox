@@ -9,22 +9,22 @@
 
 Pod::Spec.new do |s|
   s.name             = "kublaiOSToolbox"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of kublaiOSToolbox."
+  s.version          = "0.0.1"
+  s.summary          = "Operational Swift functions, extensions and all."
   s.description      = <<-DESC
                        An optional longer description of kublaiOSToolbox
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/kublaiOSToolbox"
+  s.homepage         = "https://github.com/kublaios/kublaiOSToolbox"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Kubilay Erdogan's MBPR" => "kubilay.erdogan@frame.com.tr" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/kublaiOSToolbox.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Kubilay Erdogan" => "kublaios@gmail.com" }
+  s.source           = { :git => "https://github.com/kublaios/kublaiOSToolbox.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/kublaios'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'CoreData'
+  s.dependency 'Reachability', '~> 3.2'
 end
