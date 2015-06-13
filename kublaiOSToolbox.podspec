@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "kublaiOSToolbox"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "Operational Swift functions, extensions and all."
   s.description      = <<-DESC
                        An optional longer description of kublaiOSToolbox
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
     'kublaiOSToolbox' => ['Pod/Assets/*.png']
   }
 
-  s.public_header_files = 'Pods/Reachability/*.h'
+  # s.public_header_files = 'Pods/Reachability/*.h'
   # s.frameworks = 'CoreData'
-  s.dependency 'Reachability', '~> 3.2'
+  # s.dependency 'Reachability', '~> 3.2'
 end
