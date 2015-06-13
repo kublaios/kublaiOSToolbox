@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "kublaiOSToolbox"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "Operational Swift functions, extensions and all."
   s.description      = <<-DESC
                        An optional longer description of kublaiOSToolbox
