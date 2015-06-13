@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'CoreData'
+  # s.frameworks = 'CoreData'
   s.dependency 'Reachability', '~> 3.2'
 end
