@@ -11,8 +11,10 @@ import CoreData
 
 class CoreDataHelper {
     
+    /* Sample implementations - to be made somewhere in your main project (perhaps as an extension)
     static var myCommonMoc: NSManagedObjectContext?
     
+    // when there are various data processes simultaneously, each should have their own managed object context
     static func newMoc() -> NSManagedObjectContext {
         var moc = NSManagedObjectContext()
         moc.persistentStoreCoordinator = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext!.persistentStoreCoordinator
@@ -25,6 +27,7 @@ class CoreDataHelper {
         }
         return self.myCommonMoc!
     }
+    */
     
     static func newEntity(name: String!, moc: NSManagedObjectContext) -> NSManagedObject {
         return NSEntityDescription.insertNewObjectForEntityForName(name, inManagedObjectContext: moc) as! NSManagedObject
